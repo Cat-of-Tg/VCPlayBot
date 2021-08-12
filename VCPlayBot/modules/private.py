@@ -21,7 +21,7 @@ def _start(client, message):
                     InlineKeyboardButton(
                         "Support ", url=f"https://t.me/{SUPPORT_GROUP}")
                     InlineKeyboardButton(
-                         "Owner✨,url=f"https://t.me/ok_bie_bot")
+                         "Owner✨, url=f"https://t.me/ok_bie_bot")
                 ],
             ]
         ),
