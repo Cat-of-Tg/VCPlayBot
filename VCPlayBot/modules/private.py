@@ -14,17 +14,17 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "Mᴜsɪᴄ ɢʀᴏᴜᴘ", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        " Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SUPPORT_GROUP}")
+                        "Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url=f"https://{SUPPORT_GROUP}")
                     InlineKeyboardButton(
-                           "✔Owner✨", url=f"https://t.me/Ok_bie_Bot")
+                           "Dᴇᴠ✨", url=f"https://t.me/Ok_bie_Bot")
                 ]
             ]
         ),
@@ -39,7 +39,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "Sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GROUP}"
                     )
                 ]
             ]
@@ -79,18 +79,18 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '📲 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             [InlineKeyboardButton(text = '💬 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://t.me/{SUPPORT_GROUP}")],
-             [InlineKeyboardButton(text = ✔OWNER✨', url=f"https://t.me/Ok_bie_Bot")],
-            [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
+            [InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton(text = 'Mᴜsɪᴄ ɢʀᴏᴜᴘ', url=f"https://t.me/{UPDATES_CHANNEL}"),
+             [InlineKeyboardButton(text = 'Sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = 'Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ', url=f"https://t.me/{SUPPORT_GROUP}")],
+             [InlineKeyboardButton(text = 'Dᴇᴠ✨', url=f"https://t.me/Ok_bie_Bot")],
+            [InlineKeyboardButton(text = ''«', callback_data = f"help+{pos-1}")]
         ]
     else:
         button = [
             [
-                InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}"),
-                InlineKeyboardButton(text = '▶️', callback_data = f"help+{pos+1}")
+                InlineKeyboardButton(text = '<', callback_data = f"help+{pos-1}"),
+                InlineKeyboardButton(text = '>', callback_data = f"help+{pos+1}")
             ],
         ]
     return button
@@ -103,7 +103,7 @@ async def ghelp(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🟡 Click here for help 🟡", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "Click Here For Help", url=f"https://t.me/{BOT_USERNAME}?start"
                     )
                 ]
             ]
